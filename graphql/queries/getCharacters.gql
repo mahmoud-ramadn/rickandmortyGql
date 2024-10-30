@@ -1,0 +1,15 @@
+# graphql/queries/characterQueries.gql
+query GetCharacters {
+  characters {
+    results {
+      id
+      name
+      image
+      status
+      species
+      location {
+        name
+      }
+    }
+  }
+}
